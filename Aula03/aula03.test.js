@@ -1,27 +1,3 @@
-> aula-03@1.0.0 test
-> jest
-
- PASS  Aula03/aula03.test.js
-  Cálculo da Média
-    ✓ deve calcular corretamente a média de quatro números inteiros (3ms)
-
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
-Snapshots:   0 total
-Time:        0.512 s
-Ran all test suites.
-> aula-03@1.0.0 test
-> jest
-
- PASS  Aula03/aula03.test.js
-  Cálculo da Média
-    ✓ deve calcular corretamente a média de quatro números inteiros (3ms)
-
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
-Snapshots:   0 total
-Time:        0.512 s
-Ran all test suites.
 // 1. Importamos a função que queremos testar.
 const { calcularMedia } = require('./aula03.js');
 
