@@ -1,16 +1,26 @@
 // --- Parte 1: Cálculo da Média ---
-// Declaração das variáveis com as notas.
-let n1 = 7
-let n2 = 5 
-let n3 = 10 
-let n4 = 10 
+// Declaração das notas usando um Array.
+// Com um array, podemos facilmente adicionar ou remover notas.
+const notas = [7, 5, 10, 10];
 
-// Função que calcula a média.
-function calcularMedia(nota1, nota2, nota3, nota4) {
-    return (nota1 + nota2 + nota3 + nota4) / 4;
+// Função refatorada para calcular a média de um array de notas.
+function calcularMedia(arrayDeNotas) {
+    // Se o array estiver vazio, retornamos 0 para evitar divisão por zero.
+    if (arrayDeNotas.length === 0) {
+        return 0;
+    }
+
+    let somaDasNotas = 0;
+    // Usamos um laço de repetição 'for...of' para somar cada nota do array.
+    for (const nota of arrayDeNotas) {
+        somaDasNotas += nota;
+    }
+
+    // A média é a soma dividida pela quantidade de notas.
+    return somaDasNotas / arrayDeNotas.length;
 }
 
-let media = calcularMedia(n1, n2, n3, n4);
+const media = calcularMedia(notas);
 console.log("A média do aluno é:", media);
 
 // --- Parte 2: Teste com Raiz Quadrada ---
